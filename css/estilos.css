@@ -9,18 +9,7 @@ body {
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.85) !important;
-}
-
-.portada {
-  background: url('../img/portada.png') no-repeat center center/cover;
-}
-
-.portada-texto {
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 80%;
-  padding: 5px;
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .seccion {
@@ -40,4 +29,27 @@ h1, h2 {
 .card img {
   height: 220px;
   object-fit: cover;
+}
+
+/* button */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.seccion:hover {
+  transition: background-color 0.3s;
+  background-color: #111111;
+}
+.parallax-section {
+  background-image: url('../img/fondo1.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.capts {
+  color: white;
+  text-align: center;
 }
