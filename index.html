@@ -21,9 +21,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navContent">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnología</a></li>
-          <li class="nav-item"><a class="nav-link" href="#juegos">Juegos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="flex.html">Flexbox y CSS Grid</a></li>
           <li class="nav-item"><a class="nav-link" href="https://playdacid.wixsite.com/vida-fit" target="_blank">Página Web IA</a></li>
           <li class="nav-item"><a class="nav-link" href="frogg.html">Flexbox Froggy</a></li>
         </ul>
@@ -31,67 +29,142 @@
     </div>
   </nav>
 
-  <!-- PORTADA -->
-    <section id="inicio" class="parallax-section d-flex align-items-center justify-content-center">
-    <div class="text-center text-white">
-        <h1 class="display-3">Bienvenido al mundo del gaming</h1>
+  <!-- PORTADA CON CARRUSEL -->
+  <section id="inicio" class="position-relative">
+    <div id="carruselPortada" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="parallax-slide" style="background-image: url('img/fondo1.png');"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="parallax-slide" style="background-image: url('img/fondo2.png');"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="parallax-slide" style="background-image: url('img/fondo3.png');"></div>
+        </div>
+      </div>
     </div>
-    </section>
 
-
-  
-  <!-- TECNOLOGÍA -->
-  <section id="tecnologia" class="seccion bg-dark text-white" data-aos="fade-up">
-    <div class="container py-5">
-      <h2 class="mb-4">💻 Tecnología</h2>
-      <p>Los videojuegos modernos utilizan motores gráficos como Unreal o Unity, IA avanzada, redes neuronales, físicas realistas y shaders para lograr experiencias inmersivas.</p>
+    <!-- Texto centrado -->
+    <div class="overlay-content text-white text-center">
+      <h1 class="display-3">Bienvenido al mundo del gaming</h1>
     </div>
   </section>
 
-  <!-- JUEGOS -->
-    <section id="juegos" class="seccion bg-black text-white" data-aos="fade-right">
-    <div class="container py-5">
-        <h2 class="mb-4">🔥 Juegos Populares</h2>
-        <div class="row g-4">
-        
+  <!-- TECNOLOGÍA MODERNA -->
+  <section id="tecnologia" class="seccion bg-dark text-white" data-aos="fade-up">
+    <div class="container py-1">
+      <h2 class="mb-4 text-center">💻 Tecnología en los Videojuegos</h2>
+      <div class="row g-4 text-center">
+
         <div class="col-md-4" data-aos="zoom-in">
-            <div class="card bg-dark text-white border-0 shadow h-100">
-            <img src="img/gta.png" class="card-img-top" alt="GTA VI">
-            <div class="card-body">
-                <h5 class="card-title">GTA VI</h5>
-                <p class="card-text">Gráficos realistas, mundo abierto masivo, y una historia cinematográfica.</p>
-            </div>
-            </div>
+          <div class="p-4 border border-secondary rounded-4 h-100 shadow-sm bg-black">
+            <i class="bi bi-cpu-fill display-4 text-info mb-3"></i>
+            <h5 class="fw-bold">Motores Gráficos</h5>
+            <p class="small">Unreal Engine y Unity permiten crear entornos 3D con gran realismo y rendimiento.</p>
+          </div>
         </div>
 
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="card bg-dark text-white border-0 shadow h-100">
-            <img src="img/fortnite.png" class="card-img-top" alt="Fortnite">
-            <div class="card-body">
-                <h5 class="card-title">Fortnite</h5>
-                <p class="card-text">Combina acción, construcción y eventos en vivo con gráficos estilizados.</p>
-            </div>
-            </div>
+          <div class="p-4 border border-secondary rounded-4 h-100 shadow-sm bg-black">
+            <i class="bi bi-brain display-4 text-warning mb-3"></i>
+            <h5 class="fw-bold">Inteligencia Artificial</h5>
+            <p class="small">La IA gestiona enemigos, crea comportamientos realistas y adapta la dificultad al jugador.</p>
+          </div>
         </div>
 
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="card bg-dark text-white border-0 shadow h-100">
-            <img src="img/mine.png" class="card-img-top" alt="Minecraft">
-            <div class="card-body">
-                <h5 class="card-title">Minecraft</h5>
-                <p class="card-text">Creatividad infinita en un mundo de bloques que inspira a millones.</p>
-            </div>
-            </div>
+          <div class="p-4 border border-secondary rounded-4 h-100 shadow-sm bg-black">
+            <i class="bi bi-gpu-card display-4 text-success mb-3"></i>
+            <h5 class="fw-bold">Gráficos Avanzados</h5>
+            <p class="small">Shaders, físicas realistas y ray tracing mejoran la iluminación, sombras y texturas.</p>
+          </div>
         </div>
-        </div>
-        
+
+      </div>
     </div>
+  </section>
+
+
+  <!-- JUEGOS -->
+    <section id="juegos" class="seccion bg-black text-white" data-aos="fade-right">
+      <div class="container py-5">
+          <h2 class="mb-4">🔥 Juegos Populares</h2>
+          <div class="row g-4">
+          
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card bg-dark text-white border-0 shadow h-100">
+                <img src="img/gta.png" class="card-img-top" alt="GTA VI">
+                <div class="card-body">
+                    <h5 class="card-title">GTA VI</h5>
+                    <p class="card-text">Gráficos realistas, mundo abierto masivo, y una historia cinematográfica.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card bg-dark text-white border-0 shadow h-100">
+                <img src="img/fortnite.png" class="card-img-top" alt="Fortnite">
+                <div class="card-body">
+                    <h5 class="card-title">Fortnite</h5>
+                    <p class="card-text">Combina acción, construcción y eventos en vivo con gráficos estilizados.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card bg-dark text-white border-0 shadow h-100">
+                <img src="img/mine.png" class="card-img-top" alt="Minecraft">
+                <div class="card-body">
+                    <h5 class="card-title">Minecraft</h5>
+                    <p class="card-text">Creatividad infinita en un mundo de bloques que inspira a millones.</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Call of Duty -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="card bg-dark text-white border-0 shadow h-100">
+                <img src="img/cod.png" class="card-img-top" alt="Call of Duty">
+                <div class="card-body">
+                  <h5 class="card-title">Call of Duty</h5>
+                  <p class="card-text">Intensa acción en primera persona con campañas épicas y multijugador competitivo.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- League of Legends -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+              <div class="card bg-dark text-white border-0 shadow h-100">
+                <img src="img/lol.png" class="card-img-top" alt="League of Legends">
+                <div class="card-body">
+                  <h5 class="card-title">League of Legends</h5>
+                  <p class="card-text">Batallas estratégicas 5v5 con campeones únicos y un competitivo global vibrante.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- The Legend of Zelda -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+              <div class="card bg-dark text-white border-0 shadow h-100">
+                <img src="img/zelda.png" class="card-img-top" alt="The Legend of Zelda">
+                <div class="card-body">
+                  <h5 class="card-title">The Legend of Zelda</h5>
+                  <p class="card-text">Exploración, acertijos y aventuras épicas en mundos mágicos y llenos de historia.</p>
+                </div>
+              </div>
+            </div>
+
+          
+          </div>
+          
+      </div>
     </section>
 
 
   <!-- CONTACTO -->
     <section id="contacto" class="seccion bg-dark text-white" data-aos="fade-up">
-    <div class="container py-5">
+    <div class="container py-1">
         <h2 class="mb-4">📩 Contáctanos</h2>
         <form id="formulario-contacto" class="row g-3">
         <div class="col-md-6">
@@ -109,6 +182,20 @@
         </form>
     </div>
     </section>
+
+    <!-- FOOTER -->
+  <footer class="bg-black text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 TecnoGames. Todos los derechos reservados.</p>
+      <p class="mb-2 small">Creado con ❤️ para los amantes de la tecnología y los videojuegos.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://www.facebook.com/daviddm.alvarez" target="_blank" class="text-white text-decoration-none"><i class="bi bi-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/deivix_04/" target="_blank" class="text-white text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a>
+        <a href="https://github.com/Deivix07" target="_blank" class="text-white text-decoration-none"><i class="bi bi-envelope"></i> Git Hub</a>
+      </div>
+    </div>
+  </footer>
+
 
 
   <!-- Scripts -->

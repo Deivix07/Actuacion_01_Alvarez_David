@@ -41,15 +41,46 @@ h1, h2 {
   transition: background-color 0.3s;
   background-color: #111111;
 }
-.parallax-section {
-  background-image: url('../img/fondo1.png');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
 
 .capts {
   color: white;
   text-align: center;
+}
+
+/* Carrusel ocupa toda la pantalla */
+#inicio {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Cada slide (con efecto de fondo tipo parallax) */
+.parallax-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Texto centrado y encima del carrusel */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Oscurecer ligeramente fondo si deseas más contraste */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+footer a:hover {
+  color: #0d6efd; /* Azul Bootstrap */
+  text-decoration: underline;
 }
